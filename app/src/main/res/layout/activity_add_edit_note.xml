@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".AddEditNoteActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idETNoteTitle"
+        android:hint="Enter Note Title"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/idETNoteDescription"
+        android:hint="Enter Note Title"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/idETNoteTitle"
+        android:layout_above="@+id/idBtnAddUpdate"
+        android:gravity="top"
+        android:layout_marginHorizontal="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idBtnAddUpdate"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="Button"
+        android:background="@drawable/custon_button_back"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>
